@@ -1,6 +1,37 @@
 ### What is this repository for? ###
 This repository provides an Ackermann type of RC car simulation environment using V-REP and ROS. There are software packages integrated in order to make this happen.
 
+### What can you do with this repo? ###
+You can obtain [nav_msgs/Odometry](http://docs.ros.org/api/nav_msgs/html/msg/Odometry.html), [sensor_msgs/IMU](http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html), [tf](http://wiki.ros.org/tf), [nav_msgs](http://wiki.ros.org/nav_msgs), [geometry_msgs/Twist](http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html), [sensor_msgs/Image](http://docs.ros.org/api/sensor_msgs/html/msg/Image.html) from the simulator. More precisely, the following are all ROS topic messages from V-REP.
+##Topic name | message type##
+
+```
+#!shell
+
+/clock | rosgraph_msgs/Clock
+/cmd_vel | geometry_msgs/Twist
+/odom | nav_msgs/Odometry
+/rosout | rosgraph_msgs/Log
+/rosout_agg | rosgraph_msgs/Log
+/tf | tf2_msgs/TFMessage
+/vrep/front_scan | sensor_msgs/LaserScan
+/vrep/image_raw | sensor_msgs/Image
+/vrep/image_raw/CameraInfo | sensor_msgs/CameraInfo
+/vrep/image_raw/compressed | sensor_msgs/CompressedImage
+/vrep/image_raw/compressed/parameter_descriptions | dynamic_reconfigure/ConfigDescription
+/vrep/image_raw/compressed/parameter_updates | dynamic_reconfigure/Config
+/vrep/image_raw/compressedDepth/parameter_descriptions | dynamic_reconfigure/ConfigDescription
+/vrep/image_raw/compressedDepth/parameter_updates | dynamic_reconfigure/Config
+/vrep/image_raw/theora | theora_image_transport/Packet
+/vrep/image_raw/theora/parameter_descriptions | dynamic_reconfigure/ConfigDescription
+/vrep/image_raw/theora/parameter_updates | dynamic_reconfigure/Config
+/vrep/imu | sensor_msgs/Imu
+/vrep/info | vrep_common/VrepInfo
+```
+
+### Which are software packages included in this repo?###
+This repo integrates many existing open-source ROS packages such as
+
 * The V-REP RC car scene model is from [https://github.com/tkelestemur/ackermann_robot](https://github.com/tkelestemur/ackermann_robot), and only a map, and sensors configurations are slightly modified. Other than that, the V-REP scene model is identical.
 
 * [https://github.com/bartville/vrep_plugin_imu](https://github.com/bartville/vrep_plugin_imu) provides to publish ROS [sensor_msgs/IMU](http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html) topic message.
