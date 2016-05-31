@@ -1,5 +1,29 @@
 ### What is this repository for? ###
-BlaBlaBla...
+This repository provides an Ackermann type of RC car simulation environment using V-REP and ROS. There are software packages integrated in order to make this happen.
+
+* The V-REP RC car scene model is from [https://github.com/tkelestemur/ackermann_robot](https://github.com/tkelestemur/ackermann_robot), and only a map, and sensors configurations are slightly modified. Other than that, the V-REP scene model is identical.
+
+* [https://github.com/bartville/vrep_plugin_imu](https://github.com/bartville/vrep_plugin_imu) provides to publish ROS [sensor_msgs/IMU](http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html) topic message.
+ 
+* [https://github.com/whoenig/vrep_ros_helper](https://github.com/whoenig/vrep_ros_helper) is used to provide extra simulated clock source. This software package simply publishes */clock* topic based on the current machine clock.
+
+* [https://github.com/ros-planning/navigation](https://github.com/ros-planning/navigation) is also used for mapping, localisation, and path planning. Frankly speaking, these software packages contain much information and may be a bit complicated those who isn't familiar with the basic understandings of some related theories. However there are awesome [tutorials](http://wiki.ros.org/navigation/Tutorials) provided by ROS and [other resources](https://www.packtpub.com/hardware-and-creative/mastering-ros-robotics-programming) may help you get through the challenges.
+
+* [https://github.com/raulmur/ORB_SLAM](https://github.com/raulmur/ORB_SLAM) is the-state-of-the-art Monocular SLAM open source software package and it is not necessary to run the simulator, but it is a good example to demonstrate the images from V-REP can be utilised for other vision-based application.
+
+![asdfasdf.png](https://bitbucket.org/repo/oa7zMk/images/590262749-asdfasdf.png)
+![Screen Shot 2016-05-31 at 11.00.26 AM.png](https://bitbucket.org/repo/oa7zMk/images/1140182399-Screen%20Shot%202016-05-31%20at%2011.00.26%20AM.png)
+
+## Here are the video demonstrations of these packages##
+
+Autonomous navigation using a laser scanner
+[https://youtu.be/ZiQwZdrpnlI](https://youtu.be/ZiQwZdrpnlI)
+
+Up-to-scale poses estimation using ORB-SLAM
+[https://youtu.be/xfFewdoVVbQ](https://youtu.be/xfFewdoVVbQ)
+
+
+
 
 ### How do I get set up? ###
 * Install ROS indigo. Please follow instructions from [http://wiki.ros.org/indigo/Installation/Ubuntu](Link URL) if you haven't installed it.
