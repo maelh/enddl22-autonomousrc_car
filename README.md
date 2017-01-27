@@ -39,6 +39,14 @@ This repo integrates many existing open-source ROS packages such as
 * [https://github.com/whoenig/vrep_ros_helper](https://github.com/whoenig/vrep_ros_helper) is used to provide extra simulated clock source. This software package simply publishes */clock* topic based on the current machine clock.
 
 * [https://github.com/ros-planning/navigation](https://github.com/ros-planning/navigation) is also used for mapping, localisation, and path planning. Frankly speaking, these software packages contain much information and may be a bit complicated those who isn't familiar with the basic understandings of some related theories. However there are awesome [tutorials](http://wiki.ros.org/navigation/Tutorials) provided by ROS and [other resources](https://www.packtpub.com/hardware-and-creative/mastering-ros-robotics-programming) may help you get through the challenges.
+Note that you need this package for testing. Please run following commands for compilation.
+```
+sudo apt-get install ros-indigo-teleop-twist-keyboard ros-indigo-map-server ros-indigo-amcl ros-indigo-move-base ros-indigo-robot-pose-ekf
+
+(inside the "src" folder) git clone https://github.com/ros-planning/navigation -b indigo-devel 
+
+(at catkin workspace root)catkin build
+```
 
 * [https://github.com/raulmur/ORB_SLAM](https://github.com/raulmur/ORB_SLAM) is the-state-of-the-art Monocular SLAM open source software package and it is not necessary to run the simulator, but it is a good example to demonstrate the images from V-REP can be utilised for other vision-based application.
 
