@@ -148,6 +148,7 @@ YourPath/indigo_catkin_ws/src/autonomousrc_car/ackermann_robot/src/simulation.cp
 compilation terminated.
 make[2]: *** [CMakeFiles/simulation.dir/src/simulation.cpp.o] Error 1
 make[1]: *** [CMakeFiles/simulation.dir/all] Error 2
+
 **Workaround**
 "catkin clean" at YourPath/indigo_catkin_ws and "catkin build" again.
 
@@ -159,5 +160,6 @@ YourPath/indigo_catkin_ws/src/autonomousrc_car/ackermann_robot/src/simulation.cp
 compilation terminated.
 make[2]: *** [CMakeFiles/simulation.dir/src/simulation.cpp.o] Error 1
 make[1]: *** [CMakeFiles/simulation.dir/all] Error 2
+
 **Workaround**
 "catkin clean" at YourPath/indigo_catkin_ws and "catkin build" again.
