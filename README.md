@@ -6,8 +6,6 @@ You can obtain [nav_msgs/Odometry](http://docs.ros.org/api/nav_msgs/html/msg/Odo
 ##Topic name | message type##
 
 ```
-#!shell
-
 /clock | rosgraph_msgs/Clock
 /cmd_vel | geometry_msgs/Twist
 /odom | nav_msgs/Odometry
@@ -71,13 +69,11 @@ Up-to-scale poses estimation using ORB-SLAM
 
 * cloning this repo by typing 
 ```
-#!shell
 
 git clone https://enddl22@bitbucket.org/enddl22/autonomousrc_car.git
 ```
 * ROS package compilation by 
 ```
-#!shell
 
 catkin_make
 ```
@@ -88,7 +84,6 @@ catkin_make
 
 open a terminal and run V-REP by typing 
 ```
-#!shell
 
 ./vrep.sh
 ```
@@ -98,7 +93,6 @@ open a terminal and run V-REP by typing
 
 
 ```
-#!shell
 
 ~/indigo_catkin_ws/src/ackermann_robot/launch$ roslaunch ./teleop_key.launch
 ~/indigo_catkin_ws/src/ackermann_robot/launch$ roslaunch ./amcl.launch
@@ -110,27 +104,23 @@ open a terminal and run V-REP by typing
 * If you want to see rostopic lists, then type
 
 ```
-#!shell
 
 rostopic list -v
 ```
 * If you want to see images or plot by choosing visualization and add image_view and plot
 
 ```
-#!shell
 
 rosrun rqt_gui rqt_gui
 ```
 
 * If you want to record data from V-REP, then type 
 ```
-#!shell
 
 rosbag record /vrep/image_raw
 ```
  and multiple topics recording are also possible by 
 ```
-#!shell
 
 rosbag record -a
 ```
@@ -138,14 +128,12 @@ rosbag record -a
 * create an empty folder.
 * move into the empty folder, and type 
 ```
-#!shell
 
 rosrun image_view image_saver image:=/vrep/image_raw
 ```
 
 * open a new terminal and play bag file by 
 ```
-#!shell
 
 rosbag play ./your_bag_file_name.bag
 ```
