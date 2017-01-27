@@ -154,12 +154,14 @@ make[1]: *** [CMakeFiles/simulation.dir/all] Error 2
 
 
 **Error message:**
-YourPath/indigo_catkin_ws/src/autonomousrc_car/ackermann_robot/src/simulation.cpp:8:34: fatal error: vrep_common/VrepInfo.h: No such file or directory
- #include "vrep_common/VrepInfo.h"
-                                  ^
-compilation terminated.
-make[2]: *** [CMakeFiles/simulation.dir/src/simulation.cpp.o] Error 1
-make[1]: *** [CMakeFiles/simulation.dir/all] Error 2
+ERROR: cannot launch node of type [teleop_twist_keyboard/teleop_twist_keyboard.py]: or 
+ERROR: cannot launch node of type [map_server/map_server]: map_server
 
 **Workaround**
-"catkin clean" at YourPath/indigo_catkin_ws and "catkin build" again.
+Install dependencies and please have a look "Which are software packages included in this repo" section.
+
+**Error message:**
+My robot is not moving...or nothing happening.
+**Workaround**
+Please try to set a goal by clicking 2D Nav Goal from rviz top toolbar and dragging on rviz viewer (you will be able to see a green arrow).
+![Screenshot from 2017-01-27 18:31:57.png](https://bitbucket.org/repo/oa7zMk/images/3251192709-Screenshot%20from%202017-01-27%2018:31:57.png)
