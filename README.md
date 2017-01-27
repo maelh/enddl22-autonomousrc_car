@@ -162,6 +162,8 @@ Install dependencies and please have a look "Which are software packages include
 
 **Error message:**
 My robot is not moving...or nothing happening.
+
 **Workaround**
 Please try to set a goal by clicking 2D Nav Goal from rviz top toolbar and dragging on rviz viewer (you will be able to see a green arrow).
-![Screenshot from 2017-01-27 18:31:57.png](https://bitbucket.org/repo/oa7zMk/images/3251192709-Screenshot%20from%202017-01-27%2018:31:57.png)
+
+![Screenshot from 2017-01-27 18:31:57.png](http://www.addictedtoibiza.com/wp-content/uploads/2012/12/example.png)
