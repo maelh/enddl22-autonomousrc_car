@@ -137,3 +137,27 @@ rosrun image_view image_saver image:=/vrep/image_raw
 
 rosbag play ./your_bag_file_name.bag
 ```
+
+### Troubles and possible workarounds ###
+Here are some possible troubles and their workarounds that I found. Hope this helps somehow.
+
+**Error message:**
+YourPath/indigo_catkin_ws/src/autonomousrc_car/ackermann_robot/src/simulation.cpp:8:34: fatal error: vrep_common/VrepInfo.h: No such file or directory
+ #include "vrep_common/VrepInfo.h"
+                                  ^
+compilation terminated.
+make[2]: *** [CMakeFiles/simulation.dir/src/simulation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/simulation.dir/all] Error 2
+**Workaround**
+"catkin clean" at YourPath/indigo_catkin_ws and "catkin build" again.
+
+
+**Error message:**
+YourPath/indigo_catkin_ws/src/autonomousrc_car/ackermann_robot/src/simulation.cpp:8:34: fatal error: vrep_common/VrepInfo.h: No such file or directory
+ #include "vrep_common/VrepInfo.h"
+                                  ^
+compilation terminated.
+make[2]: *** [CMakeFiles/simulation.dir/src/simulation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/simulation.dir/all] Error 2
+**Workaround**
+"catkin clean" at YourPath/indigo_catkin_ws and "catkin build" again.
