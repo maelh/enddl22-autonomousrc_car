@@ -166,4 +166,4 @@ My robot is not moving...or nothing happening.
 **Workaround**
 Please try to set a goal by clicking 2D Nav Goal from rviz top toolbar and dragging on rviz viewer (you will be able to see a green arrow).
 
-![Screenshot from 2017-01-27 18:31:57.png](http://www.addictedtoibiza.com/wp-content/uploads/2012/12/example.png)
+![Screenshot from 2017-01-27 18:31:57.png](https://bitbucket-assetroot.s3.amazonaws.com/repository/oa7zMk/3251192709-Screenshot%20from%202017-01-27%2018%3A31%3A57.png?Signature=QyhT5pdSW%2FoKwEA6WThBLXB11xk%3D&Expires=1485540575&AWSAccessKeyId=AKIAIVFPT2YJYYZY3H4A&versionId=ufuHgBc6qgJS2n.MLFiHmosGqEKF94T6)
