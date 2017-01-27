@@ -75,7 +75,7 @@ git clone https://enddl22@bitbucket.org/enddl22/autonomousrc_car.git
 * ROS package compilation by 
 ```
 
-catkin_make
+catkin build
 ```
 
 ### How can I run all packages? ###
