@@ -30,7 +30,7 @@ You can obtain [nav_msgs/Odometry](http://docs.ros.org/api/nav_msgs/html/msg/Odo
 ### Which are software packages included in this repo?###
 This repo integrates many existing open-source ROS packages such as
 
-* The V-REP RC car scene model is from [https://github.com/tkelestemur/ackermann_robot](https://github.com/tkelestemur/ackermann_robot), and only a map, and sensors configurations are slightly modified. Other than that, the V-REP scene model is identical.
+* The V-REP RC car scene model is from [https://github.com/inkyusa/ackermann_robot](https://github.com/inkyusa/ackermann_robot), and only a map, and sensors configurations are slightly modified. Other than that, the V-REP scene model is identical. Note that the github repo recently has been removed therefore I created the identical repo. I am not holding any copyrights for this.
 
 * [https://github.com/bartville/vrep_plugin_imu](https://github.com/bartville/vrep_plugin_imu) provides to publish ROS [sensor_msgs/IMU](http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html) topic message.
  
